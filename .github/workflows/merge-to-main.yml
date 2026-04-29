@@ -1,0 +1,14 @@
+name: Workflow B - Trigger on Merge to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log-merge:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Log message
+        run: echo "Changes merged to main"
